@@ -21,6 +21,7 @@ html(lang='en')
     script
       include ../js/analytics.js
   body
+    include ../img/icon-defs.svg
     .page
       header.header
         .header__logo
@@ -71,5 +72,6 @@ html(lang='en')
                 li JavaScript
       footer.footer
         a(href!='mailto:#{email}')
-          i(class='icon icon--mail')
+          svg(class='icon icon--email')
+            use(xlink:href='#email-icon')
           | !{email}

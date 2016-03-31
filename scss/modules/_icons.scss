@@ -9,24 +9,14 @@
 .icon {
   display: inline-block;
   width: rem(26);
-  height: rem(26);
+	height: rem(26);
+
   margin-right: $tiny-spacing;
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  fill: #333333;
+  vertical-align: bottom;
 
-  vertical-align: middle;
-
-  &--twitter {
-    background-image: url('../img/twitter-logo.svg');
-  }
-
-  &--github {
-    background-image: url('../img/github-logo.svg');
-  }
-
-  &--mail {
-    background-image: url('../img/mail-icon.svg');
+  &--email {
+    vertical-align: middle;
   }
 }

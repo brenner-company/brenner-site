@@ -5,5 +5,6 @@ nav.navigation(role='navigation')
         li.navigation__item(class=item.icon ? 'navigation__item--iconized' : '')
           a(href=item.url)
             if item.icon
-              i(class='icon icon--#{item.name}')
+              svg(class='icon icon--#{item.name}')
+                use(xlink:href='##{item.name}-icon')
             span.navigation__item__title #{item.title}
