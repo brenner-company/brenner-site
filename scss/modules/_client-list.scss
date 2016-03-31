@@ -19,6 +19,7 @@
 
 .client-list__item {
   flex: 1 1 50%;
+  max-width: 50%; // setting max-width for IE 10 + 11 so flexbox doesn't break border-box sizing
   display: flex;
   justify-content: center;
   align-content: center;
@@ -26,17 +27,15 @@
 
   padding: $small-spacing;
 
-  // &:nth-child(2n) {
-  //   padding-right: 0;
-  // }
-
   @include media($tablet) {
     flex-basis: 25%;
+    max-width: 25%; // setting max-width for IE 10 + 11 so flexbox doesn't break border-box sizing
   }
 
   > img {
     display: inline-block;
     max-width: 100%;
+    // width: auto;
     height: auto;
   }
 }

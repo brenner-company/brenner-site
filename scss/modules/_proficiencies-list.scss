@@ -16,11 +16,13 @@
 
   > li {
     flex: 1 1 100%;
+    max-width: 100%; // setting max-width for IE 10 + 11 so flexbox doesn't break border-box sizing
 
     margin-bottom: $small-spacing;
 
     @include media($tablet) {
       flex-basis: 50%;
+      max-width: 50%; // setting max-width for IE 10 + 11 so flexbox doesn't break border-box sizing
 
       padding-right: $small-spacing;
 
