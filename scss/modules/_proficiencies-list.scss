@@ -1,0 +1,58 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  IMPORTS/MODULES/_PROFICIENCIES-LIST.SCSS
+//
+//  Styles for 'Brenner - Full site'
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.proficiencies-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include media($tablet) {
+    margin-bottom: 0;
+  }
+
+  > li {
+    flex: 1 1 100%;
+
+    margin-bottom: $small-spacing;
+
+    @include media($tablet) {
+      flex-basis: 50%;
+
+      padding-right: $small-spacing;
+
+      &:nth-child(2n) {
+        padding-right: 0;
+      }
+    }
+  }
+
+  h3 {
+    display: block;
+
+    margin: 0;
+    padding: rem(10) $small-spacing rem(8) $small-spacing; // manual padding values (visually better)
+
+    background-color: $color-dark;
+
+    color: $color-light;
+    font-size: rem(18);
+    font-weight: 400;
+  }
+}
+
+.proficiencies-list__sublist {
+  display: block;
+
+  padding: $small-spacing $base-spacing $small-spacing $large-spacing;
+
+  border: $base-border;
+  list-style-type: disc;
+
+  > li {
+    font-size: rem(18);
+  }
+}

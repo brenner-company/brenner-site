@@ -1,0 +1,24 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  IMPORTS/MODULES/_SECTIONS.SCSS
+//
+//  Styles for 'Brenner - Full site'
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.main__section {
+  h2 {
+    margin-bottom: $base-spacing;
+    padding: $tiny-spacing $small-spacing;
+
+    border: $base-border;
+  }
+}
+
+.section {
+  &--introduction {
+    p {
+      font-size: rem(17);
+    }
+  }
+}

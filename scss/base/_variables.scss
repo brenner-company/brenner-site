@@ -1,0 +1,61 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  BASE/_SETTINGS.SCSS
+//
+//  Settings for 'Brenner - Full site'
+//
+////////////////////////////////////////////////////////////////////////////////
+
+// base em value
+$em-base: 16px;
+
+// modular scale base (if ever needed)
+$modular-scale-base: 1.333rem;
+
+// max width (for containers)
+$max-width: rem(680) !global;
+
+// $grid-columns: 12 !global;
+// $column: 40px !global;
+// $gutter: 20px !global;
+
+// show visual grid (temporary)
+$visual-grid: false !global;
+
+// typography
+$base-font-family: 'Montserrat', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$heading-font-family: $base-font-family;
+
+// font sizes
+$base-font-size: 1rem;
+
+// line height
+$base-line-height: 1.4;
+$heading-line-height: 1.2;
+
+// other sizes
+$base-spacing-height: 1.5;
+$base-spacing: $base-spacing-height * 1rem;
+$small-spacing: $base-spacing / 2;
+$tiny-spacing: $small-spacing / 2;
+$large-spacing: $base-spacing * 2;
+$base-z-index: 0;
+
+// colors
+$color-dark: #333333;
+$color-light: #FFFDF5;
+
+// font colors
+$base-font-color: $color-dark;
+$action-color: $color-dark;
+
+// border
+$base-border-color: $color-dark;
+$base-border: 3px solid $base-border-color;
+
+// background colors
+$base-background-color: $color-light;
+
+// animations
+$base-duration: 150ms;
+$base-timing: ease;

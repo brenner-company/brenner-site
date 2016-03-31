@@ -1,0 +1,42 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  IMPORTS/MODULES/_CLIENT-LIST.SCSS
+//
+//  Styles for 'Brenner - Full site'
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: $small-spacing;
+
+  @include media($tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.client-list__item {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  padding: $small-spacing;
+
+  // &:nth-child(2n) {
+  //   padding-right: 0;
+  // }
+
+  @include media($tablet) {
+    flex-basis: 25%;
+  }
+
+  > img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+  }
+}

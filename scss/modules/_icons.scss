@@ -1,0 +1,32 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  IMPORTS/MODULES/_ICONS.SCSS
+//
+//  Styles for 'Brenner - Full site'
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.icon {
+  display: inline-block;
+  width: rem(26);
+  height: rem(26);
+  margin-right: $tiny-spacing;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  vertical-align: middle;
+
+  &--twitter {
+    background-image: url('../img/twitter-logo.svg');
+  }
+
+  &--github {
+    background-image: url('../img/github-logo.svg');
+  }
+
+  &--mail {
+    background-image: url('../img/mail-icon.svg');
+  }
+}

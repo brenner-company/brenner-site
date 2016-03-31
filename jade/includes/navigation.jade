@@ -1,0 +1,9 @@
+nav.navigation(role='navigation')
+  ul.naked-list.navigation__list
+    each item, index in navigation
+      if item.enabled
+        li.navigation__item(class=item.icon ? 'navigation__item--iconized' : '')
+          a(href=item.url)
+            if item.icon
+              i(class='icon icon--#{item.name}')
+            span.navigation__item__title #{item.title}

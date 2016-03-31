@@ -1,0 +1,75 @@
+//- settings (include)
+include includes/settings.jade
+
+//- content
+doctype html
+html(lang='en')
+  head
+    include includes/meta-doc.jade
+    title #{site.name} - #{site.description}
+    include includes/meta-seo.jade
+    include includes/meta-brand.jade
+    link(
+      rel='stylesheet'
+      href='css/main.css'
+    )
+    link(
+      rel='stylesheet',
+      href='https://fonts.googleapis.com/css?family=Montserrat:400,700',
+      type='text/css'
+    )
+    script
+      include ../js/analytics.js
+  body
+    .page
+      header.header
+        .header__logo
+          h1
+            a(href='http://brenner.company').logo
+              img.logo__img(src='img/brenner-logo.svg', alt='#{site.name}')
+              span.logo__title #{site.name}
+                span.hidden  - #{site.description}
+        include includes/navigation.jade
+        
+      main.main
+        section.main__section.section--introduction
+          h2 #{site.description}
+          p Hi, my name is Karel Persoons and I am #[a(href='/') #[strong Brenner]], a one-person company from Ghent (Belgium) that provides coding, UX &amp; consulting services on a freelance basis.
+          p I’m always interested in exciting new projects. So feel free to #[a(href!='mailto:#{email}') contact me].
+          
+        section.main__section
+          h2= 'Some of my clients'
+          include includes/clients.jade
+          
+        section.main__section
+          h2= 'Development stack & tools'
+          ul.naked-list.proficiencies-list
+            li 
+              h3 Design
+              ul.proficiencies-list__sublist
+                li Sketch
+                li Affinity Designer
+            
+            li 
+              h3 Building
+              ul.proficiencies-list__sublist
+                li CodeKit
+                li Gulp
+                
+            li 
+              h3 Coding
+              ul.proficiencies-list__sublist
+                li Emmet
+                li Atom
+                li Sublime Text
+                
+            li 
+              h3 Languages
+              ul.proficiencies-list__sublist
+                li HTML (Jade)
+                li CSS (SASS + Bourbon)
+                li JavaScript
+      footer.footer
+        a(href!='mailto:#{email}')
+          i(class='icon icon--mail')
+          | !{email}

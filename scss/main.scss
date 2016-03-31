@@ -1,0 +1,33 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  STYLES.MAIN.SCSS
+//
+//  Styles for 'Brenner - Full site'
+//
+////////////////////////////////////////////////////////////////////////////////
+
+// import normalize.css
+@import "vendors/_normalize";
+
+// import Bourbon
+@import "bourbon";
+
+// import settings (for general purposes & Bourbon + Neat)
+@import "base/_variables";
+
+// import Neat (Bourbon)
+@import "neat";
+
+// import all styling
+@import "base/_common",
+        "base/_typography",
+        "base/_helpers",
+        "layout/_breakpoints",
+        "layout/_scaffolding",
+        "layout/_header",
+        "layout/_footer",
+        "modules/_icons",
+        "modules/_navigation",
+        "modules/_sections",
+        "modules/_client-list",
+        "modules/_proficiencies-list";
