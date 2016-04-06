@@ -2,7 +2,7 @@
 //
 //  IMPORTS/MODULES/_PROFICIENCIES-LIST.SCSS
 //
-//  Styles for 'Brenner - Full site'
+//  Styles for 'Brenner - Site (main)'
 //
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -24,10 +24,10 @@
       flex-basis: 50%;
       max-width: 50%; // setting max-width for IE 10 + 11 so flexbox doesn't break border-box sizing
 
-      padding-right: $small-spacing;
+      padding: 0 $tiny-spacing 0 0;
 
       &:nth-child(2n) {
-        padding-right: 0;
+        padding: 0 0 0 $tiny-spacing;
       }
     }
   }

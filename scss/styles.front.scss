@@ -1,0 +1,22 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  STYLES.FRONT.SCSS
+//
+//  Styles for 'Brenner - Site (front)'
+//
+////////////////////////////////////////////////////////////////////////////////
+
+// import Bourbon
+@import "bourbon";
+
+// import settings (for general purposes & Bourbon + Neat)
+@import "base/_variables";
+
+// import Neat (Bourbon)
+@import "neat";
+
+// import all styling
+@import "layout/_breakpoints",
+        "modules/_sections",
+        "modules/_client-list",
+        "modules/_proficiencies-list";
