@@ -11,11 +11,11 @@ html(lang='en')
     include includes/meta-brand.jade
     link(
       rel='stylesheet'
-      href='css/styles.main.css'
+      href='/css/styles.main.css'
     )
     link(
       rel='stylesheet'
-      href='css/styles.front.css'
+      href='/css/styles.front.css'
     )
     link(
       rel='stylesheet',
@@ -30,8 +30,8 @@ html(lang='en')
       header.header
         .header__logo
           h1
-            a(href='http://brenner.company').logo
-              img.logo__img(src='img/brenner-logo.svg', alt='#{site.name}')
+            a(href='/').logo
+              img.logo__img(src='/img/brenner-logo.svg', alt='#{site.name}')
               span.logo__title #{site.name}
                 span.hidden  - #{site.description}
         include includes/navigation.jade
@@ -75,7 +75,10 @@ html(lang='en')
                 li CSS (SASS + Bourbon)
                 li JavaScript
       footer.footer
-        a(href!='mailto:#{email}')
-          svg(class='icon icon--email')
-            use(xlink:href='#email-icon')
-          | !{email}
+        ul.naked-list.footer-list
+          li
+            a(href!='mailto:#{email}')
+              svg(class='icon icon--email')
+                use(xlink:href='#email-icon')
+              span.footer-list__item__title
+                | !{email}

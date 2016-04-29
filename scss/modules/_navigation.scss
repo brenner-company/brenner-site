@@ -33,21 +33,28 @@
   }
 
   & > a {
-    text-decoration: none;
+    border: none;
 
-    &:hover {
-      text-decoration: underline;
-    }
+    text-decoration: none;
+    transition: none;
 
     &:active,
     &:focus,
     &:hover {
       color: $action-color;
+
+      & > .navigation__item__title {
+        border-bottom-color: $action-color;
+      }
     }
   }
 }
 
 .navigation__item__title {
+  border-bottom: 2px solid transparent;
+  
+  vertical-align: middle;
+
   .navigation__item--iconized & {
     display: none;
 

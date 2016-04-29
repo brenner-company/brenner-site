@@ -15,22 +15,19 @@ $modular-scale-base: 1.333rem;
 // max width (for containers)
 $max-width: rem(680) !global;
 
-// $grid-columns: 12 !global;
-// $column: 40px !global;
-// $gutter: 20px !global;
-
 // show visual grid (temporary)
 $visual-grid: false !global;
 
 // typography
 $base-font-family: 'Montserrat', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $heading-font-family: $base-font-family;
+$code-font-family: Menlo, Monaco, 'Courier New', monospace;
 
 // font sizes
 $base-font-size: 1rem;
 
 // line height
-$base-line-height: 1.4;
+$base-line-height: 1.5;
 $heading-line-height: 1.2;
 
 // other sizes
@@ -43,11 +40,14 @@ $base-z-index: 0;
 
 // colors
 $color-dark: #333333;
-$color-light: #FFFDF5;
+$color-light: #fffdf5;
 
 // font colors
 $base-font-color: $color-dark;
 $action-color: $color-dark;
+$interaction-color: #5c5b5a; // lighten($action-color, 20%)
+$disabled-color: lighten($interaction-color, 40%);
+$code-color: #c30c30;
 
 // border
 $base-border-color: $color-dark;
@@ -55,7 +55,10 @@ $base-border: 3px solid $base-border-color;
 
 // background colors
 $base-background-color: $color-light;
+$code-background-color: transparentize($color-dark, 0.95);
+$message-background-color: transparentize($color-dark, 0.95);
+$odd-row-background-color: transparentize($color-dark, 0.95);
 
 // animations
 $base-duration: 150ms;
-$base-timing: ease;
+$base-timing: ease-out;

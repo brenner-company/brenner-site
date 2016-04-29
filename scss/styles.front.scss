@@ -12,6 +12,9 @@
 // import settings (for general purposes & Bourbon + Neat)
 @import "base/_variables";
 
+// set border-box-sizing to false so Neat doesn't prepend 'box-sizing:border-box' again 
+$border-box-sizing: false;
+
 // import Neat (Bourbon)
 @import "neat";
 

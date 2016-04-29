@@ -29,10 +29,10 @@
 }
 
 .main__section {
-  padding: $base-spacing 0 ($base-spacing - $small-spacing);
+  padding: $base-spacing 0 ($base-spacing - $small-spacing) 0;
 
   @include media($tablet) {
-    padding: $large-spacing 0 ($large-spacing - $small-spacing);
+    padding: $large-spacing 0 ($large-spacing - $small-spacing) 0;
   }
 }
 

@@ -30,13 +30,18 @@ p {
 }
 
 a {
+  border-bottom: 1px solid $action-color;
+
   color: $action-color;
-  transition: color $base-duration $base-timing;
+  text-decoration: none;
+  transition: color $base-duration $base-timing, border $base-duration $base-timing;
 
   &:active,
   &:focus,
   &:hover {
-    color: lighten($action-color, 15%);
+    border-color: lighten($interaction-color, 15%); // make the border color a bit lighter so it matches
+
+    color: $interaction-color;
   }
 }
 

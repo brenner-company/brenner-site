@@ -6,6 +6,35 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-.footer {
-  // margin: $small-spacing 0;
+.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  > li {
+    flex: 0 0 auto;
+    margin-right: $base-spacing;
+
+    > a {
+      border: none;
+
+      text-decoration: none;
+      transition: none;
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: $action-color;
+
+        & > .footer-list__item__title {
+          border-color: $action-color;
+        }
+      }
+    }
+  }
+}
+
+.footer-list__item__title {
+  border-bottom: 1px solid transparent;
+
+  vertical-align: middle;
 }
