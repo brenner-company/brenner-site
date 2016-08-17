@@ -1,0 +1,14 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  IMPORTS/HACKS/_SHAME.SCSS
+//
+//  Dirty, dirty hacks for 'Brenner - Site (front)'
+//
+////////////////////////////////////////////////////////////////////////////////
+
+// SVG (client list) images within IE 10+ (& Edge) are not sized properly
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .client-list__image {
+    width: 100%;
+  }
+}

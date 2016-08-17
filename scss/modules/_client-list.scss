@@ -31,11 +31,10 @@
     flex-basis: 25%;
     max-width: 25%; // setting max-width for IE 10 + 11 so flexbox doesn't break border-box sizing
   }
+}
 
-  > img {
-    display: inline-block;
-    max-width: 100%;
-    // width: auto;
-    height: auto;
-  }
+.client-list__image {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
 }
