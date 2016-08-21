@@ -1,0 +1,19 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  IMPORTS/MODULES/_BLOG.SCSS
+//
+//  Styles for 'Brenner - Site (blog)'
+//
+////////////////////////////////////////////////////////////////////////////////
+
+// import all blog styling
+@import "blog/_common",
+        "blog/_typography",
+        "blog/_icons",
+        "blog/_buttons",
+        "blog/_syntax",
+        "blog/_code",
+        "blog/_overview",
+        "blog/_pagination",
+        "blog/_post",
+        "blog/_related-posts";

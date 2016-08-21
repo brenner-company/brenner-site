@@ -1,0 +1,65 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  IMPORTS/MODULES/BLOG/_CODE.SCSS
+//
+//  Styles for 'Brenner - Site (blog)'
+//
+////////////////////////////////////////////////////////////////////////////////
+
+code,
+pre {
+  font-family: $code-font-family;
+}
+
+code {
+  padding: ($tiny-spacing / 2) $tiny-spacing;
+
+  background-color: $code-background-color;
+  border-radius: 3px;
+
+  color: $code-color;
+  font-size: rem(14);
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: $small-spacing;
+
+  font-size: rem(14);
+
+  & code {
+    padding: 0;
+
+    background-color: transparent;
+
+    color: inherit;
+
+    & span {
+      white-space: nowrap;
+    }
+  }
+}
+
+.highlight {
+  padding: $small-spacing;
+  margin: 0 0 $small-spacing 0;
+
+  background-color: $code-background-color;
+  border-radius: 3px;
+
+  pre {
+    margin: 0;
+    overflow-x: auto;
+  }
+
+  .lineno {
+    display: inline-block;
+    padding-right: $tiny-spacing;
+    padding-left: ($tiny-spacing / 2);
+
+    color: #999;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+}
