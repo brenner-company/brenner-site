@@ -1,4 +1,5 @@
 config.codekit
 css
 scss/.sass-cache
-index.html
+/index.html
+/blog
