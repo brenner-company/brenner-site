@@ -1,0 +1,29 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  IMPORTS/MODULES/BLOG/_PAGINATION.SCSS
+//
+//  Styles for 'Brenner - Site (blog)'
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.blog-pagination {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    justify-content: flex-start;
+  }
+}
+
+.blog-pagination__item {
+  flex: 0 0 auto;
+  width: calc(50% - 3px);
+
+  @media (min-width: $tablet) {
+    width: auto;
+
+    &:first-child {
+      margin-right: $tiny-spacing;
+    }
+  }
+}

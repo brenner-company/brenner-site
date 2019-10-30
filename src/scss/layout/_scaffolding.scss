@@ -1,0 +1,47 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  IMPORTS/LAYOUT/_SCAFFOLDING.SCSS
+//
+//  Styles for 'Brenner - Site (main)'
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.page {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 680px;
+  padding: 0 $small-spacing;
+
+  @media (min-width: $tablet) {
+    padding: 0 $base-spacing;
+  }
+}
+
+.header,
+.main__section {
+  border-bottom: $base-border;
+}
+
+.header {
+  padding: $base-spacing 0;
+
+  @media (min-width: $tablet) {
+    padding: $large-spacing 0;
+  }
+}
+
+.main__section {
+  padding: $base-spacing 0 ($base-spacing - $small-spacing) 0;
+
+  @media (min-width: $tablet) {
+    padding: $large-spacing 0 ($large-spacing - $small-spacing) 0;
+  }
+}
+
+.footer {
+  padding: $small-spacing 0 $base-spacing 0;
+
+  @media (min-width: $tablet) {
+    padding-bottom: $large-spacing;
+  }
+}

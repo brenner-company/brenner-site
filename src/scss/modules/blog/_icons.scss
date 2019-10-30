@@ -1,0 +1,33 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  IMPORTS/MODULES/_ICONS.SCSS
+//
+//  Styles for 'Brenner - Site (main)'
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.icon {
+  &--post {
+    width: rem(24px);
+  	height: rem(24px);
+
+    @media (min-width: $tablet) {
+      width: rem(28px);
+    	height: rem(28px);
+    }
+
+    &--small {
+      width: rem(20px);
+    	height: rem(20px);
+    }
+  }
+
+  &--timer {
+    width: rem(20px);
+  	height: rem(20px);
+
+    margin-right: 0;
+
+    vertical-align: text-bottom;
+  }
+}

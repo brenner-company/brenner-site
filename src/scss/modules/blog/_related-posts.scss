@@ -1,0 +1,74 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  IMPORTS/MODULES/BLOG/_RELATED-POSTS.SCSS
+//
+//  Styles for 'Brenner - Site (blog)'
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.related {
+  padding-top: $base-spacing;
+
+  border-top: $base-border;
+
+  @media (min-width: $tablet) {
+    padding-top: $large-spacing;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: $base-spacing;
+  }
+}
+
+.related-post {
+  display: flex;
+  margin-bottom: $small-spacing;
+
+  @media (min-width: $tablet) {
+    margin-bottom: $base-spacing;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.related-post__icon {
+  flex: 0 0 auto;
+
+  margin-right: $tiny-spacing;
+
+  @media (min-width: $tablet) {
+    margin-right: $small-spacing;
+  }
+}
+
+.related-post__meta {
+  flex: 1 1 auto;
+
+  padding-top: 0;
+}
+
+.related-post__title {
+  margin-top: 0;
+  margin-bottom: $tiny-spacing;
+
+  font-size: rem(18px);
+  line-height: 1.3;
+
+  & > a {
+    border-bottom: none;
+
+    text-decoration: none;
+    transition: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+      border-bottom: 2px solid $action-color;
+
+      color: $action-color;
+    }
+  }
+}

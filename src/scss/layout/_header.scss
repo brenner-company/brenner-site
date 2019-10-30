@@ -1,0 +1,63 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  IMPORTS/LAYOUT/_HEADER.SCSS
+//
+//  Styles for 'Brenner - Site (main)'
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.header {
+  display: flex;
+  width: 100%;
+
+  &__logo {
+    flex: 0 0 rem(72px);
+    margin-right: $small-spacing;
+
+    @media (min-width: $tablet) {
+      flex-basis: rem(216px);
+    }
+  }
+}
+
+h1,
+.logo {
+  display: block;
+}
+
+h1 {
+  margin-bottom: 0;
+
+  font-size: rem(28px);
+  text-transform: lowercase;
+}
+
+.logo {
+  border: none;
+  
+  &:active,
+  &:focus,
+  &:hover {
+    color: $action-color;
+  }
+}
+
+.logo__img,
+.logo__title {
+  vertical-align: middle;
+}
+
+.logo__img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  margin-right: $small-spacing;
+}
+
+.logo__title {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: inline-block;
+  }
+}

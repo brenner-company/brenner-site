@@ -1,0 +1,36 @@
+{
+  "name": "brenner-site",
+  "version": "0.0.1",
+  "scripts": {
+    "images:copy": "copyfiles \"src/img/**/*\" -u 2 dist/img",
+    "images:watch": "onchange --verbose \"src/img/**/*\" -- npm run images:copy",
+    "pug:compile": "pug src/pug/*.pug --out dist --pretty",
+    "pug:build": "npm-run-all pug:compile",
+    "pug:watch": "onchange --verbose \"src/pug/**/*.pug\" -- npm run pug:build",
+    "style:compile": "node-sass --include-path node_modules src/scss --output dist/css",
+    "style:post-compile": "postcss \"dist/css/**/*!(.min).css\" --dir dist/css --base dist/css --ext min.css",
+    "style:build": "npm-run-all style:compile style:post-compile",
+    "style:watch": "onchange --verbose \"src/scss/**/*.scss\" -- npm run style:build",
+    "all:clear": "rimraf dist",
+    "all:watch": "npm-run-all --parallel style:watch pug:watch images:watch",
+    "serve": "browser-sync start --server --files \"dist/**/*\" --serveStatic dist --index dist/index.html --port 1337 --reload-debounce 500 --no-notify",
+    "start": "npm-run-all build --parallel serve all:watch",
+    "build": "npm-run-all --aggregate-output all:clear --parallel style:build pug:build images:copy"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.7.0",
+    "bourbon": "^6.0.0",
+    "browser-sync": "^2.26.7",
+    "copyfiles": "^2.1.1",
+    "cssnano": "^4.1.10",
+    "node-sass": "^4.13.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^6.1.0",
+    "postcss-cli": "^6.1.3",
+    "pug": "^2.0.4",
+    "pug-cli": "^1.0.0-alpha6",
+    "rimraf": "^3.0.0",
+    "sass-rem": "^2.0.1"
+  }
+}

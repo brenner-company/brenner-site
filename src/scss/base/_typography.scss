@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  BASE/_TYPOGRAPHY.SCSS
+//
+//  Styles for 'Brenner - Site (main)'
+//
+////////////////////////////////////////////////////////////////////////////////
+
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-size: rem(24px);
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing;
+}
+
+p {
+  margin: 0 0 $small-spacing;
+}
+
+a {
+  border-bottom: 1px solid $action-color;
+
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing, border $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-color: lighten($interaction-color, 15%); // make the border color a bit lighter so it matches
+
+    color: $interaction-color;
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}

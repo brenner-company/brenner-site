@@ -1,5 +1,3 @@
-config.codekit
-css
+dist
 scss/.sass-cache
-/index.html
-/blog
+node_modules

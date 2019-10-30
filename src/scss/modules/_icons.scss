@@ -1,0 +1,18 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  IMPORTS/MODULES/_ICONS.SCSS
+//
+//  Styles for 'Brenner - Site (main)'
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.icon {
+  display: inline-block;
+  width: rem(26px);
+	height: rem(26px);
+
+  margin-right: $tiny-spacing;
+
+  fill: #333333;
+  vertical-align: middle;
+}
