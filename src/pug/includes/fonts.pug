@@ -1,0 +1,25 @@
+//- variables
+- const baseFontUrl = 'https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700'
+
+//- content
+link(
+  rel='preconnect',
+  href='https://fonts.gstatic.com',
+  crossorigin
+)
+link(
+  rel='preload',
+  as='style',
+  href=`${baseFontUrl}&display=swap`
+)
+link(
+  rel='stylesheet', 
+  href=`${baseFontUrl}&display=swap`,
+  media='print',
+  onload='this.media=\'all\''
+)
+noscript
+  link(
+    rel='stylesheet',
+    href=`${baseFontUrl}&display=swap`,
+  )
