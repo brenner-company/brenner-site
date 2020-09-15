@@ -12,10 +12,10 @@ html {
   box-sizing: inherit;
 }
 
-/* :focus {
+:focus {
   outline: var(--focus-outline);
   outline-offset: var(--focus-outline-offset);
-} */
+}
 
 html,
 body {

@@ -18,14 +18,13 @@ html(lang='en')
       include ../js/analytics.js
   body
     include ../img/icon-defs.svg
-    header.c-header
-      .o-container
-        .c-header__logo
-          h1
-            a(href='/').o-brand-logo
-              img.o-brand-logo__img(src='/img/brenner-logo-rework.svg', alt=`${site.name}`)
-              span.o-brand-logo__title #{site.name}
-                span.u-hidden - #{site.description}
+    header.c-header.t-dark
+      .o-container.c-header__container
+        h1.c-header__logo
+          a(href='/').o-brand-logo
+            img.o-brand-logo__img(src='/img/brenner-logo-rework.svg', alt=`${site.name}`)
+            span.o-brand-logo__title #{site.name}
+              span.u-text-hide - #{site.description}
         include includes/navigation.pug
       
     main.main

@@ -1,0 +1,9 @@
+.t-dark {
+  background-color: var(--dark);
+
+  color: var(--light);
+
+  & :focus {
+    outline: var(--focus-outline-dark);
+  }
+}
