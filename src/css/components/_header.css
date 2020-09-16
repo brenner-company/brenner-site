@@ -20,7 +20,7 @@
 
   color: var(--light);
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   text-transform: lowercase;
 }
 
@@ -48,44 +48,61 @@ a.o-brand-logo {
   flex: 1 1 auto;
   display: flex;
   justify-content: flex-end;
-  align-content: center;
-  align-items: center;
+  align-content: flex-end;
 
   width: 100%;
   /* padding-top: rem(4px); */
-}
 
-.c-navigation__item {
-  flex: 0 0 auto;
-  margin-right: var(--space-s);
+  & li {
+    margin: 0 var(--space-s) calc(var(--space-s) * -1) 0;
 
-  /* font-size: rem(20px); */
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  & > a {
-    border: none;
-
-    text-decoration: none;
-    transition: none;
-
-    &:active,
-    &:focus,
-    &:hover {
-      /* color: $action-color; */
-
-      & > .c-navigation__item__title {
-        border-bottom-color: var(--light);
-      }
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: calc(var(--space-s) * -1);
     }
   }
 }
 
+.c-navigation__item {
+  flex: 0 0 auto;
+  display: flex;
+
+  font-size: 1.375rem;
+  font-weight: var(--font-weight-medium);
+}
+
+.c-navigation__link {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+
+  border-bottom: 3px solid transparent;
+  padding-bottom: calc(var(--space-s) - 3px);
+
+  text-decoration: none;
+  transition: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus,
+  &:hover {
+    border-bottom-color: var(--light);
+  }
+
+  &:focus {
+    outline: none;
+    outline-offset: 0;
+  }
+
+  @nest .c-navigation__item--active > & {
+    border-bottom-color: var(--light);
+  }
+}
+
 .c-navigation__item__title {
-  border-bottom: 2px solid transparent;
-  
   vertical-align: middle;
 
   .c-navigation__item--iconized & {

@@ -9,12 +9,12 @@
  * Definitions
  */
 
- @import './_media-queries';
- @import './_color';
- @import './_base';
- @import './_typography';
- /* @import './_form';
- @import './_element'; */
+@import './_media-queries';
+@import './_color';
+@import './_base';
+@import './_typography';
+/* @import './_form';
+@import './_element'; */
 
 
 /**
@@ -27,12 +27,6 @@
 @import './base/_container';
 /* @import './base/group';
 @import './base/print'; */
-
-/**
- * Components
- */
-
- @import './components/_header';
 
  /**
  * Typography
@@ -56,13 +50,13 @@
 @import './typography/kbd';
 @import './typography/mark'; */
 
- /**
+/**
  * Themes
  */
 
- @import './themes/_themes';
+@import './themes/_themes';
 
- /**
+/**
  * Utility
  */
 
@@ -107,3 +101,9 @@
 @import './utility/_visibility';
 /* @import './utility/width';
 @import './utility/z-index'; */
+
+/**
+ * Components
+ */
+
+@import './components/_header';
