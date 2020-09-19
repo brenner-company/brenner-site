@@ -6,4 +6,8 @@
   & :focus {
     outline: var(--focus-outline-dark);
   }
+
+  & svg {
+    fill: var(--light);
+  }
 }

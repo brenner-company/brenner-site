@@ -4,7 +4,7 @@ nav.c-navigation(role='navigation')
       if item.enabled
         li.c-navigation__item(class=item.icon ? 'c-navigation__item--iconized' : '')
           a.c-navigation__link(href=item.url)
-            //- if item.icon
-            //-   svg(class=`icon icon--${item.name}`)
-            //-     use(xlink:href=`#${item.name}-icon`)
-            span.c-navigation__item__title #{item.title}
+            if item.icon
+              svg(class=`o-icon--xs o-icon--${item.name} c-navigation__item-icon`)
+                use(xlink:href=`#${item.name}-icon`)
+            span.c-navigation__item-title #{item.title}

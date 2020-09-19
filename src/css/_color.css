@@ -15,9 +15,11 @@
 
   /* Light */
   --light: #fffdf5;
+  --light-rgb: 255, 253, 245;
 
   /* Dark */
   --dark: #333333;
+  --dark-rgb: 51, 51, 51;
 
   /**
    * Shades

@@ -1,0 +1,63 @@
+.o-icon,
+.o-icon > svg,
+svg.o-icon {
+  display: inline-block;
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
+
+.o-icon--xxl,
+.o-icon--xxl > svg,
+svg.o-icon--xxl {
+  display: inline-block;
+  width: var(--icon-xxl-size);
+  height: var(--icon-xxl-size);
+}
+
+.o-icon--xl,
+.o-icon--xl > svg,
+svg.o-icon--xl {
+  display: inline-block;
+  width: var(--icon-xl-size);
+  height: var(--icon-xl-size);
+}
+
+.o-icon--lg,
+.o-icon--lg > svg,
+svg.o-icon--lg {
+  display: inline-block;
+  width: var(--icon-l-size);
+  height: var(--icon-l-size);
+}
+
+.o-icon--md,
+.o-icon--md > svg,
+svg.o-icon--md {
+  display: inline-block;
+  width: var(--icon-m-size);
+  height: var(--icon-m-size);
+}
+
+.o-icon--sm,
+.o-icon--sm > svg,
+svg.o-icon--sm {
+  display: inline-block;
+  width: var(--icon-s-size);
+  height: var(--icon-s-size);
+}
+
+.o-icon--xs,
+.o-icon--xs > svg,
+svg.o-icon--xs {
+  display: inline-block;
+  width: var(--icon-xs-size);
+  height: var(--icon-xs-size);
+}
+
+.o-icon--xxs,
+.o-icon--xxs > svg,
+svg.o-icon--xxs {
+  display: inline-block;
+  width: var(--icon-xxs-size);
+  height: var(--icon-xxs-size);
+}

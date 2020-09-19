@@ -103,6 +103,14 @@
 @import './utility/z-index'; */
 
 /**
+ * Objects
+ */
+
+@import './objects/_brand-logo';
+@import './objects/_icon';
+
+
+/**
  * Components
  */
 

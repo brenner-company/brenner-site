@@ -1,0 +1,24 @@
+.o-brand-logo {
+  display: flex;
+  align-items: center;
+
+  color: var(--light);
+  font-size: 2rem;
+  font-weight: var(--font-weight-semibold);
+  text-transform: lowercase;
+}
+
+a.o-brand-logo {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.o-brand-logo__title {
+  display: block;
+
+  margin-left: var(--space-s);
+}
