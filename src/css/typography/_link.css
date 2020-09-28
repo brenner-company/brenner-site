@@ -1,5 +1,6 @@
 a {
   color: var(--link-color);
+  font-weight: var(--font-weight-bold);
   text-decoration: var(--link-text-decoration);
   text-decoration-skip: var(--link-text-decoration-skip);
   text-decoration-skip-ink: auto;

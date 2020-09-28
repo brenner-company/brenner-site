@@ -115,3 +115,6 @@
  */
 
 @import './components/_header';
+@import './components/_section';
+@import './components/_caller';
+@import './components/_clients';

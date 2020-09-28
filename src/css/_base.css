@@ -104,10 +104,10 @@
    */
 
   --container-gutter: 1rem;
-  --container-xxl: 70rem;
-  --container-xl: 60rem;
-  --container-l: 60rem;
-  --container-m: 50rem;
+  --container-xxl: 60rem;
+  --container-xl: 50rem;
+  --container-l: 50rem;
+  --container-m: 40rem;
   --container-s: 100%;
   --container-xs: 100%;
   --container-xxs: 100%;
