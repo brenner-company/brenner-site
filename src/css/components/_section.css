@@ -6,8 +6,21 @@
   }
 }
 
-.c-section__heading {
+.c-section__subsection {
   margin-bottom: var(--space-l);
+
+  @media (--s-up) {
+    margin-bottom: var(--space-xxl);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.c-section__heading {
+  margin-bottom: var(--space-m);
+  padding: var(--space-xxs) 0;
 
   & > h2 {
     display: inline;

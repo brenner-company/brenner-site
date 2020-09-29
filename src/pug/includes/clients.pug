@@ -1,4 +1,5 @@
 ul.u-list-unstyled.c-client-list
   each client, index in clients
-    li.c-client-list__item
-      img.c-client-list__image(src=`/img/clients/${client.name}-logo.svg`, alt=`${client.title}`)
+    li.c-client-list__item-wrapper
+      span.c-client-list__item
+        img.c-client-list__image(src=`/img/clients/${client.name}-logo.svg`, alt=`${client.title}`)

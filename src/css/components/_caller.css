@@ -1,11 +1,11 @@
-:root {
+.c-caller {
   --caller-heading-vertical-padding: .125rem;
   --caller-paragraph-vertical-padding: .1875rem;
-}
 
-.c-caller {
   background-color: var(--dark);
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAiSURBVHgBtckxEQAACMPA4t8TSAs10LG5y/QCTqki+km4D+dtGWZqUbvcAAAAAElFTkSuQmCC');
+  /* background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAiSURBVHgBtckxEQAACMPA4t8TSAs10LG5y/QCTqki+km4D+dtGWZqUbvcAAAAAElFTkSuQmCC'); */
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA3SURBVHgBrc25CQAwDENRJfvvlNEUXLg0lo8P6gQPJJ8NYhfdVKkvqNJcyKQ9IZLKwlGPrpSFDxhFKSJH9zZvAAAAAElFTkSuQmCC');
+  background-size: 6px;
   background-repeat: repeat;
 
   & h2 {

@@ -43,7 +43,7 @@
   --paragraph-font-size: var(--font-size-m);
   --paragraph-font-style: normal;
   --paragraph-color: inherit;
-  --paragraph-line-height: var(--line-height-m);
+  --paragraph-line-height: var(--line-height-s);
   --paragraph-text-transform: none;
   --paragraph-letter-spacing: var(--letter-spacing);
   
@@ -77,8 +77,8 @@
    * List Item
    */
  
-  --list-item-margin: 0.5em 0 0.5em 1.5em;
-  --list-item-padding: 0 0 0 0.5em;
+  --list-item-margin: 0.25em 0 0.25em 1.5em;
+  --list-item-padding: 0 0 0 0em;
  
   /**
    * Child List
@@ -93,7 +93,7 @@
    * Unordered List
    */
  
-  --unordered-list-icon: disc;
+  --unordered-list-icon: square;
   --unordered-child-list-icon: disc;
 
   /**
