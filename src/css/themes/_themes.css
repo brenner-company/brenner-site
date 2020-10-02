@@ -1,3 +1,22 @@
+.t-home-page {
+  & p {
+    font-size: 1.1875rem;
+
+    @media (--s-up) {
+      font-size: var(--font-size-xl);
+    }
+  }
+
+  & ul,
+  & ol {
+    font-size: 1.1875rem;
+
+    @media (--s-up) {
+      font-size: var(--font-size-xl);
+    }
+  }
+}
+
 .t-dark {
   background-color: var(--dark);
 

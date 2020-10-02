@@ -6,6 +6,12 @@
   }
 }
 
+.c-section--condensed {
+  @media (--s-up) {
+    padding: var(--space-xl) 0;
+  }
+}
+
 .c-section__subsection {
   margin-bottom: var(--space-l);
 
