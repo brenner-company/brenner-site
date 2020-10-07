@@ -48,7 +48,7 @@ html(lang='en')
           .c-section__subsection
             .c-section__heading
               h2='I love helping out with'
-            ul
+            ul.c-like-list
               li Setting-up or scaffolding #[strong styling environments] for new projects
               li Creating #[strong design systems] & #[strong static prototypes]
               li Performing #[strong CSS audits]
@@ -59,13 +59,19 @@ html(lang='en')
           .c-section__subsection
             .c-section__heading
               h2='And for that I like to use'
-            ul
-              li #[span.u-text-decoration-dash-underline Design] #[strong Figma], Affinity Designer, Sketch
-              li #[span.u-text-decoration-dash-underline Building] #[strong NPM, Webpack, PostCSS], Gulp, Styled-components 
-              li #[span.u-text-decoration-dash-underline Methodology] #[strong BEM, ITCSS]
-              li #[span.u-text-decoration-dash-underline Approach] #[strong Agile (Scrum)]
-              li #[span.u-text-decoration-dash-underline Development] #[strong VS Code], Visual Studio
-              li #[span.u-text-decoration-dash-underline Languages] #[strong HTML, (S)CSS], JavaScript, SVG
+            ul.c-like-list
+              li 
+                span.c-like-list__item #[span.c-like-list__item__focus.u-text-decoration-focus Design] #[span.c-like-list__item__side #[strong Figma], Affinity Designer, Sketch]
+              li
+                span.c-like-list__item #[span.c-like-list__item__focus.u-text-decoration-focus Building] #[span.c-like-list__item__side #[strong NPM, Webpack, PostCSS], Gulp, Styled-components] 
+              li
+                span.c-like-list__item #[span.c-like-list__item__focus.u-text-decoration-focus Methodology] #[span.c-like-list__item__side #[strong BEM, ITCSS]]
+              li
+                span.c-like-list__item #[span.c-like-list__item__focus.u-text-decoration-focus Approach] #[span.c-like-list__item__side #[strong Agile (Scrum)]]
+              li
+                span.c-like-list__item #[span.c-like-list__item__focus.u-text-decoration-focus Development] #[span.c-like-list__item__side #[strong VS Code], Visual Studio]
+              li
+                span.c-like-list__item #[span.c-like-list__item__focus.u-text-decoration-focus Languages] #[span.c-like-list__item__side #[strong HTML, (S)CSS], JavaScript, SVG]
 
       section.c-section.c-section--condensed.c-caller
         .o-container.c-caller__container
@@ -77,8 +83,8 @@ html(lang='en')
 
     footer.c-footer.t-dark
       .o-container
-        ul.naked-list.footer-list
+        ul.u-list-unstyled.c-footer__list
           li
-            a(href!=`mailto:${email}`)
-              span.footer-list__item__title
+            a.c-footer__list__link(href!=`mailto:${email}`)
+              span
                 | !{email}

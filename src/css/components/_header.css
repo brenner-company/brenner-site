@@ -46,7 +46,6 @@
   display: flex;
 
   font-size: 1.375rem;
-  font-weight: var(--font-weight-medium);
 }
 
 .c-navigation__link {

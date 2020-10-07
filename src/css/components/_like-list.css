@@ -1,0 +1,18 @@
+.c-like-list__item {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.c-like-list__item__focus {
+  flex: 0 0 auto;
+}
+
+.c-like-list__item__side {
+  flex: 1 1 auto;
+
+  margin-left: .75ch;
+
+  @media (--s-up) {
+    margin-left: 1ch;
+  }
+}

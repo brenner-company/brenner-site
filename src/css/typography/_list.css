@@ -15,6 +15,10 @@ ol {
     margin: var(--list-item-margin);
     padding: var(--list-item-padding);
 
+    @media (--s-up) {
+      margin: var(--list-item-margin-s-up);
+    }
+
     & > ul,
     & > ol {
       margin: var(--child-list-margin);
@@ -28,6 +32,10 @@ ol {
       & li {
         margin: var(--child-list-item-margin);
         padding: var(--child-list-item-padding);
+
+        @media (--s-up) {
+          margin: var(--child-list-item-margin-s-up);
+        }
       }
     }
   }

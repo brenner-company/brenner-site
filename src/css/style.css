@@ -118,3 +118,5 @@
 @import './components/_section';
 @import './components/_caller';
 @import './components/_clients';
+@import './components/_like-list';
+@import './components/_footer';
