@@ -10,75 +10,81 @@ html(lang='en')
     include includes/meta-seo.pug
     include includes/meta-brand.pug
     link(
-      rel='stylesheet'
-      href='/css/styles.main.css'
-    )
-    link(
-      rel='stylesheet'
-      href='/css/styles.front.css'
-    )
-    link(
       rel='stylesheet',
-      href='https://fonts.googleapis.com/css?family=Montserrat:400,700',
-      type='text/css'
+      href='/css/style.min.css'
     )
+    include includes/fonts.pug
     script
       include ../js/analytics.js
-  body
+  body.t-home-page
     include ../img/icon-defs.svg
-    .page
-      header.header
-        .header__logo
-          h1
-            a(href='/').logo
-              img.logo__img(src='/img/brenner-logo.svg', alt=`${site.name}`)
-              span.logo__title #{site.name}
-                span.hidden - #{site.description}
+    header.c-header.t-dark
+      .o-container.c-header__container
+        h1.c-header__logo
+          a(href='/').o-brand-logo
+            img.o-brand-logo__img(src='/img/brenner-logo-rework.svg', alt=`${site.name}`)
+            span.u-show-xs-up.o-brand-logo__title #{site.name}
+              span.u-text-hide - #{site.description}
         include includes/navigation.pug
-        
-      main.main
-        section.main__section.section--introduction
-          h2 #{site.description}
-          p Hi, my name is Karel Persoons and I am #[a(href='/') #[strong Brenner]], a one-person company from Ghent (Belgium) that provides coding &amp; consulting services on a freelance basis.
-          p I’m always interested in exciting new projects. So feel free to #[a(href!=`mailto:${email}`) contact me].
-          
-        section.main__section
-          h2='Some of my clients'
+      
+    main.c-main
+      section.c-section.c-caller
+        .o-container.c-caller__container
+          .c-caller__row.c-caller__row--heading
+            h2 #{site.description}
+          .c-caller__row.c-caller__row--paragraph
+            p Hi, my name is Karel Persoons and I am #[strong Brenner], a one-person company from Ghent (Belgium) that provides coding &amp; consulting services on a freelance basis.
+          .c-caller__row.c-caller__row--paragraph
+            p I’m always interested in exciting new projects. So feel free to #[a(href!=`mailto:${email}`) contact me].
+
+      section.c-section.c-clients
+        .o-container
+          .c-section__heading
+            h2='Some of my clients'
           include includes/clients.pug
-          
-        section.main__section
-          h2='Development stack & tools'
-          ul.naked-list.proficiencies-list
-            li 
-              h3 Design
-              ul.proficiencies-list__sublist
-                li Sketch
-                li Affinity Designer
-            
-            li 
-              h3 Building
-              ul.proficiencies-list__sublist
-                li CodeKit
-                li Gulp
-                
-            li 
-              h3 Coding
-              ul.proficiencies-list__sublist
-                li Emmet
-                li Atom
-                li Sublime Text
-                
-            li 
-              h3 Languages
-              ul.proficiencies-list__sublist
-                li HTML (Jade)
-                li CSS (SASS + Bourbon)
-                li JavaScript
-      footer.footer
-        ul.naked-list.footer-list
+        
+      section.c-section
+        .o-container
+          .c-section__subsection
+            .c-section__heading
+              h2='I love helping out with'
+            ul.c-like-list
+              li Setting-up or scaffolding #[strong styling environments] for new projects
+              li Creating #[strong design systems] & #[strong static prototypes]
+              li Performing #[strong CSS audits]
+              li Improving or #[strong refactoring existing CSS/SCSS codebases]
+              li Debugging & fixing #[strong persistent styling issues]
+              li Providing on-site beginner and/or advanced #[strong CSS courses]
+
+          .c-section__subsection
+            .c-section__heading
+              h2='And for that I like to use'
+            ul.c-like-list
+              li 
+                span.c-like-list__item #[span.c-like-list__item__focus.u-text-decoration-focus Design] #[span.c-like-list__item__side #[strong Figma], Affinity Designer, Sketch]
+              li
+                span.c-like-list__item #[span.c-like-list__item__focus.u-text-decoration-focus Building] #[span.c-like-list__item__side #[strong NPM, Webpack, PostCSS], Gulp, Styled-components] 
+              li
+                span.c-like-list__item #[span.c-like-list__item__focus.u-text-decoration-focus Methodology] #[span.c-like-list__item__side #[strong BEM, ITCSS]]
+              li
+                span.c-like-list__item #[span.c-like-list__item__focus.u-text-decoration-focus Approach] #[span.c-like-list__item__side #[strong Agile (Scrum)]]
+              li
+                span.c-like-list__item #[span.c-like-list__item__focus.u-text-decoration-focus Development] #[span.c-like-list__item__side #[strong VS Code], Visual Studio]
+              li
+                span.c-like-list__item #[span.c-like-list__item__focus.u-text-decoration-focus Languages] #[span.c-like-list__item__side #[strong HTML, (S)CSS], JavaScript, SVG]
+
+      section.c-section.c-section--condensed.c-caller
+        .o-container.c-caller__container
+          .c-caller__row.c-caller__row--paragraph
+            p 
+              | I’m currently available for new projects for #[strong Q3] & #[strong Q4 2020].
+              br
+              | Interested? Make sure to #[a(href!=`mailto:${email}`) get in touch].
+
+    footer.c-footer.t-dark
+      .o-container
+        ul.u-list-unstyled.c-footer__list
           li
-            a(href!=`mailto:${email}`)
-              svg(class='icon icon--email')
-                use(xlink:href='#email-icon')
-              span.footer-list__item__title
+            a.c-footer__list__link(href!=`mailto:${email}`)
+              span
                 | !{email}

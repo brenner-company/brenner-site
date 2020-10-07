@@ -1,0 +1,21 @@
+.u-text-decoration-underline {
+  text-decoration: underline;
+}
+
+.u-text-decoration-focus {
+  padding-top: 1px;
+  padding-bottom: 3px;
+  background-color: rgba(var(--dark-rgb), .1);
+  background-size: 6px;
+  background-repeat: repeat;
+  font-weight: var(--font-weight-bold);
+
+  &:before,
+  &:after {
+    content: '\00a0';
+  }
+}
+
+.u-text-decoration-none {
+  text-decoration: none;
+}

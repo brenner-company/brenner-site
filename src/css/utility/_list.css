@@ -1,0 +1,14 @@
+.u-list-unstyled {
+  list-style: none;
+
+  & li {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+.u-list-inline {
+  & li {
+    display: inline-block;
+  }
+}

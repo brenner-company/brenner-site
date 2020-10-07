@@ -1,10 +1,10 @@
-nav.navigation(role='navigation')
-  ul.naked-list.navigation__list
+nav.c-navigation(role='navigation')
+  ul.u-list-unstyled.c-navigation__list
     each item, index in navigation
       if item.enabled
-        li.navigation__item(class=item.icon ? 'navigation__item--iconized' : '')
-          a(href=item.url)
+        li.c-navigation__item(class=item.icon ? 'c-navigation__item--iconized' : '')
+          a.c-navigation__link(href=item.url)
             if item.icon
-              svg(class=`icon icon--${item.name}`)
+              svg(class=`o-icon--xs o-icon--${item.name} c-navigation__item-icon`)
                 use(xlink:href=`#${item.name}-icon`)
-            span.navigation__item__title #{item.title}
+            span.c-navigation__item-title #{item.title}

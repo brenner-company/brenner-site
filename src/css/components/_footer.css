@@ -1,0 +1,14 @@
+.c-footer {
+  padding: var(--space-m) 0;
+}
+
+.c-footer__list__link {
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  transition: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}
