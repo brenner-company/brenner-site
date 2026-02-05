@@ -14,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/brenner-company/brenner-site/issues"
   },
-  "homepage": "https://github.com/brenner-company/brenner-site#readme"
+  "homepage": "https://github.com/brenner-company/brenner-site#readme",
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
 }
