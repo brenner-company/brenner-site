@@ -72,7 +72,7 @@
     },
     "wireframe": {
       "$value": {
-        "color": "{colors.orange.600}",
+        "color": "{colors.blue.600}",
         "width": "{dimensions.2}",
         "style": "{borders.styles.dashed}"
       }

@@ -7,33 +7,36 @@
     "white": {
       "$value": "#ffffff"
     },
-    "orange": {
+    "blue": {
       "100": {
-        "$value": "#fffaf0"
+        "$value": "#d7edfe"
       },
       "200": {
-        "$value": "#feebc8"
+        "$value": "#afd9fd"
       },
       "300": {
-        "$value": "#fbd38d"
+        "$value": "#87c0fa"
       },
       "400": {
-        "$value": "#f6ad55"
+        "$value": "#68a8f6"
       },
       "500": {
-        "$value": "#ed8936"
+        "$value": "#3884f0"
       },
       "600": {
-        "$value": "#dd6b20"
+        "$value": "#2866ce"
       },
       "700": {
-        "$value": "#c05621"
+        "$value": "#1c4bac"
       },
       "800": {
-        "$value": "#9c4221"
+        "$value": "#11348b"
       },
       "900": {
-        "$value": "#7b341e"
+        "$value": "#0a2473"
+      },
+      "1000": {
+        "$value": "#0a2473"
       }
     }
   }
