@@ -1,0 +1,30 @@
+/*
+GLOBAL 
+*/
+
+/* html {
+  font-size: 62.5%;
+} */
+
+/* body {
+  min-height: 100vh;
+
+  background-color: #ffede4;
+
+  font-size: 1.6rem;
+  color: #442618;
+
+  @media screen and (min-width: 872px) {
+    align-content: center;
+  }
+} */
+
+body {
+  min-height: var(--viewport-height);
+
+  /* background: var(--color-light);
+  color: var(--color-dark);
+  font-size: var(--size-step-0);
+  font-family: var(--font-base);
+  line-height: var(--leading-standard); */
+}

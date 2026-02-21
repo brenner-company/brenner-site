@@ -1,0 +1,15 @@
+/*
+ADDITIONAL VARIABLES 
+*/
+
+/* Predefined viewport height */
+
+:root {
+  --viewport-height: 100vh;
+}
+
+@supports (height: 100dvh) {
+  :root {
+    --viewport-height: 100dvh;
+  }
+}
