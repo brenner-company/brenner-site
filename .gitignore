@@ -1,3 +1,4 @@
 node_modules
 css/variables/_generated-variables.css
 dist
+.vscode
