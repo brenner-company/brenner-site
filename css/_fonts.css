@@ -1,0 +1,12 @@
+/*
+RESET 
+https://fonts.google.com/specimen/Inter
+*/
+
+@font-face {
+  font-family: "InterVariable";
+  font-style: normal;
+  font-weight: 300 400 700;
+  font-display: swap;
+  src: url("../assets/fonts/Inter-VariableFont_opsz,wght.woff2") format("woff2");
+}

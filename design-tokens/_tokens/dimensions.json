@@ -1,0 +1,8 @@
+{
+  "dimensions": {
+    "$type": "dimension",
+    "3xs": {
+      "$value": { "min": 5, "max": 6 }
+    }
+  }
+}

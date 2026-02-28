@@ -2,11 +2,11 @@
   "text": {
     "fonts": {
       "$type": "fontFamily",
-      "serif": {
-        "$value": "Times New Roman, serif"
+      "base": {
+        "$value": "InterVariable, sans-serif"
       },
-      "sans": {
-        "$value": "Open Sans, sans-serif"
+      "accent": {
+        "$value": "InterVariable, sans-serif"
       }
     },
     "sizes": {
@@ -21,13 +21,13 @@
     "weights": {
       "$type": "fontWeight",
       "light": {
-        "$value": "thin"
+        "$value": 300
       },
       "regular": {
-        "$value": "regular"
+        "$value": 400
       },
       "bold": {
-        "$value": "extra-bold"
+        "$value": 700
       }
     },
     "lineHeights": {
@@ -43,7 +43,7 @@
       "$type": "typography",
       "heading": {
         "$value": {
-          "fontFamily": "{text.fonts.sans}",
+          "fontFamily": "{text.fonts.accent}",
           "fontWeight": "{text.weights.bold}",
           "fontSize": "{text.sizes.heading}",
           "lineHeight": "{text.lineHeights.large}"
@@ -51,7 +51,7 @@
       },
       "body": {
         "$value": {
-          "fontFamily": "{text.fonts.serif}",
+          "fontFamily": "{text.fonts.base}",
           "fontWeight": "{text.weights.regular}",
           "fontSize": "{text.sizes.body}",
           "lineHeight": "{text.lineHeights.normal}"

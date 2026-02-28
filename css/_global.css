@@ -22,6 +22,8 @@ GLOBAL
 body {
   min-height: var(--viewport-height);
 
+  font-family: var(--font-base);
+
   /* background: var(--color-light);
   color: var(--color-dark);
   font-size: var(--size-step-0);
