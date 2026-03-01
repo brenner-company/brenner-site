@@ -1,9 +1,10 @@
 {
   "name": "brenner-site",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "tokens:build": "style-dictionary build --config ./design-tokens/config.json",
+    "tokens:build": "node design-tokens/build.js",
     "tokens:watch": "nodemon --watch ./design-tokens/tokens/ --ext json --on-change-only --exec \"npm run tokens:build\"",
     "dev:pre": "npm run tokens:build",
     "dev": "npm run dev:pre && concurrently vite \"npm run tokens:watch\"",
@@ -25,9 +26,7 @@
     "concurrently": "^9.2.1",
     "nodemon": "^3.1.14",
     "postcss-import": "^16.1.1",
-    "postcss-utopia": "^1.1.0",
     "style-dictionary": "^5.3.2",
-    "style-dictionary-utils": "^6.0.1",
     "vite": "^7.3.1"
   }
 }
