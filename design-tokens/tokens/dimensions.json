@@ -5,16 +5,64 @@
       "$value": { "min": 5, "max": 6 }
     },
     "2xs": {
-      "$value": {
-        "value": 16,
-        "unit": "px"
-      }
+      "$value": { "min": 9, "max": 12 }
     },
     "xs": {
-      "$value": {
-        "value": 24,
-        "unit": "px"
-      }
+      "$value": { "min": 14, "max": 18 }
+    },
+    "s": {
+      "$value": { "min": 18, "max": 24 }
+    },
+    "m": {
+      "$value": { "min": 27, "max": 36 }
+    },
+    "l": {
+      "$value": { "min": 36, "max": 48 }
+    },
+    "xl": {
+      "$value": { "min": 54, "max": 72 }
+    },
+    "2xl": {
+      "$value": { "min": 72, "max": 96 }
+    },
+    "3xl": {
+      "$value": { "min": 108, "max": 144 }
+    },
+    "4xl": {
+      "$value": { "min": 144, "max": 192 }
+    },
+    "3xs-2xs": {
+      "$value": { "min": 5, "max": 12 }
+    },
+    "2xs-xs": {
+      "$value": { "min": 9, "max": 18 }
+    },
+    "xs-s": {
+      "$value": { "min": 14, "max": 24 }
+    },
+    "s-m": {
+      "$value": { "min": 18, "max": 36 }
+    },
+    "m-l": {
+      "$value": { "min": 27, "max": 48 }
+    },
+    "l-xl": {
+      "$value": { "min": 36, "max": 72 }
+    },
+    "xl-2xl": {
+      "$value": { "min": 54, "max": 96 }
+    },
+    "2xl-3xl": {
+      "$value": { "min": 72, "max": 144 }
+    },
+    "3xl-4xl": {
+      "$value": { "min": 108, "max": 192 }
+    },
+    "s-l": {
+      "$value": { "min": 18, "max": 48 }
+    },
+    "s-xl": {
+      "$value": { "min": 18, "max": 72 }
     }
   }
 }
