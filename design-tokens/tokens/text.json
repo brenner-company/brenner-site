@@ -1,0 +1,62 @@
+{
+  "text": {
+    "fonts": {
+      "$type": "fontFamily",
+      "base": {
+        "$value": "InterVariable, sans-serif"
+      },
+      "accent": {
+        "$value": "InterVariable, sans-serif"
+      }
+    },
+    "sizes": {
+      "$type": "fontSize",
+      "heading": {
+        "$value": "{dimensions.7}"
+      },
+      "body": {
+        "$value": "{dimensions.xs}"
+      }
+    },
+    "weights": {
+      "$type": "fontWeight",
+      "light": {
+        "$value": "light"
+      },
+      "regular": {
+        "$value": "regular"
+      },
+      "bold": {
+        "$value": "bold"
+      }
+    },
+    "lineHeights": {
+      "$type": "number",
+      "normal": {
+        "$value": 1.2
+      },
+      "large": {
+        "$value": 1.8
+      }
+    },
+    "typography": {
+      "$type": "typography",
+      "heading": {
+        "$value": {
+          "fontFamily": "{text.fonts.accent}",
+          "fontWeight": "{text.weights.bold}",
+          "fontSize": "{text.sizes.heading}",
+          "lineHeight": "{text.lineHeights.large}"
+        }
+      },
+      "body": {
+        "$value": {
+          "fontFamily": "{text.fonts.base}",
+          "fontWeight": "{text.weights.regular}",
+          "fontSize": "{text.sizes.body}",
+          "lineHeight": "{text.lineHeights.normal}"
+        }
+      }
+    }
+  }
+}

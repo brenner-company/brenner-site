@@ -1,6 +1,7 @@
 {
   "dimensions": {
     "$type": "dimension",
+    "$description": "Generated from Utopia - Fluid Space Calculator (presets: https://utopia.fyi/space/calculator/?c=330,18,1.2,1200,24,1.25,6,2,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6%7C8,s-l%7Cs-xl&g=s,l,xl,12)",
     "3xs": {
       "$value": { "min": 5, "max": 6 }
     },

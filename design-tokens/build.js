@@ -8,7 +8,7 @@ import { buildClamp } from "./utilities/buildClamp.js";
 StyleDictionary.registerTransformGroup({
   name: "css/brenner",
   transforms: StyleDictionary.hooks.transformGroups["css"].filter(
-    (t) => t !== "size/rem",
+    (transform) => transform !== "size/rem",
   ),
 });
 
