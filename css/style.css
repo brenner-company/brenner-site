@@ -1,6 +1,6 @@
-/* @import "_variables.css"; */
 @import "variables/_generated-variables.css";
 @import "variables/_additional-variables.css";
 @import "_reset.css";
 @import "_global.css";
 @import "_fonts.css";
+@import "_layout.css";

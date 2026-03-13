@@ -1,6 +1,6 @@
-/*
-GLOBAL 
-*/
+/**
+ * GLOBAL
+ */
 
 /* html {
   font-size: 62.5%;
@@ -22,7 +22,12 @@ GLOBAL
 body {
   min-height: var(--viewport-height);
 
-  font-family: var(--font-base);
+  background-color: var(--colors-white);
+
+  color: var(--color-dark);
+  font-family: var(--text-fonts-base);
+  font-size: var(--text-sizes-body);
+  line-height: var(--text-line-heights-normal);
 
   /* background: var(--color-light);
   color: var(--color-dark);

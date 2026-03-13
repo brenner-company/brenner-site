@@ -1,0 +1,29 @@
+{
+  "type-scale": {
+    "$type": "dimension",
+    "4xl": {
+      "$value": { "min": 44.79, "max": 61.04 }
+    },
+    "3xl": {
+      "$value": { "min": 37.32, "max": 48.83 }
+    },
+    "2xl": {
+      "$value": { "min": 31.1, "max": 39.06 }
+    },
+    "xl": {
+      "$value": { "min": 25.92, "max": 31.25 }
+    },
+    "l": {
+      "$value": { "min": 21.6, "max": 25.0 }
+    },
+    "m": {
+      "$value": { "min": 18.0, "max": 20.0 }
+    },
+    "s": {
+      "$value": { "min": 15.0, "max": 16.0 }
+    },
+    "xs": {
+      "$value": { "min": 12.5, "max": 12.8 }
+    }
+  }
+}

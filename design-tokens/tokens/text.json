@@ -12,10 +12,10 @@
     "sizes": {
       "$type": "fontSize",
       "heading": {
-        "$value": "{dimensions.7}"
+        "$value": "{type-scale.xl}"
       },
       "body": {
-        "$value": "{dimensions.xs}"
+        "$value": "{type-scale.m}"
       }
     },
     "weights": {

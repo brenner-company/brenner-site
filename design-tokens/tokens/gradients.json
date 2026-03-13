@@ -1,0 +1,13 @@
+{
+  "gradient": {
+    "$type": "color",
+    "backdrop": {
+      "start": {
+        "$value": "{color.cyan.500}"
+      },
+      "end": {
+        "$value": "{color.orange.400}"
+      }
+    }
+  }
+}
