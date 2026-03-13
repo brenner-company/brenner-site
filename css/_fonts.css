@@ -1,12 +1,44 @@
-/*
-RESET 
-https://fonts.google.com/specimen/Inter
-*/
+/**
+ * FONTS
+ * Inter - https://fonts.google.com/specimen/Inter
+ * Euclid Circular B - https://www.swisstypefaces.com/fonts/euclid/
+ */
+
+/* Inter (variable version) */
 
 @font-face {
   font-family: "InterVariable";
   font-style: normal;
-  font-weight: 300 400 700;
+  font-weight: 200 800;
   font-display: swap;
   src: url("../assets/fonts/Inter-VariableFont_opsz,wght.woff2") format("woff2");
+}
+
+/* Euclid Circular B */
+
+@font-face {
+  font-family: "EuclidCircularB";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../assets/fonts/EuclidCircularB/EuclidCircularB-Medium-WebS.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "EuclidCircularB";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../assets/fonts/EuclidCircularB/EuclidCircularB-Semibold-WebXL.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "EuclidCircularB";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/fonts/EuclidCircularB/EuclidCircularB-Bold-WebXL.woff2")
+    format("woff2");
 }

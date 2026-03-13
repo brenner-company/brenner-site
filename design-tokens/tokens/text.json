@@ -3,10 +3,10 @@
     "fonts": {
       "$type": "fontFamily",
       "base": {
-        "$value": "InterVariable, sans-serif"
+        "$value": "InterVariable, system-ui, sans-serif"
       },
       "accent": {
-        "$value": "InterVariable, sans-serif"
+        "$value": "EuclidCircularB, system-ui, sans-serif"
       }
     },
     "sizes": {
