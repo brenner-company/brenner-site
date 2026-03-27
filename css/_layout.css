@@ -1,3 +1,7 @@
+/**
+ * LAYOUT
+ */
+
 body {
   @media screen and (min-width: 872px) {
     align-content: center;
@@ -5,28 +9,103 @@ body {
 }
 
 .l-intro {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   padding: 35px;
-  gap: 35px;
+  /* gap: 35px; */
 
   @media screen and (min-width: 872px) {
     max-width: fit-content;
     margin-inline: auto;
 
-    flex-direction: row;
+    /* flex-direction: row; */
     padding-block: 0;
     padding-inline: 75px;
-    gap: 75px;
+    /* gap: 75px; */
   }
 
   @media screen and (min-width: 1080px) {
     padding-inline: 100px;
-    gap: 100px;
+    /* gap: 100px; */
   }
 
   @media screen and (min-width: 1420px) {
     padding-inline: 125px;
+    /* gap: 125px; */
+  }
+}
+
+.l-intro__header {
+}
+
+.l-intro__divider {
+  display: flex;
+  flex-direction: column;
+  /* margin-inline: -35px;
+
+  @media screen and (min-width: 872px) {
+    flex-direction: row;
+    flex: 0 0 auto;
+
+    margin-inline: 0;
+  } */
+
+  &::before,
+  &::after {
+    height: 2px;
+    width: 100%;
+    content: "";
+
+    /* @media screen and (min-width: 872px) {
+      width: 2px;
+      height: 100%;
+    } */
+  }
+
+  &::before {
+    background-color: rgb(255 255 255 / 0.65);
+
+    @media screen and (min-width: 872px) {
+      background: linear-gradient(
+        90deg,
+        rgb(255 255 255 / 0) 0%,
+        rgb(255 255 255 / 0.65) 10%,
+        rgb(255 255 255 / 0.65) 90%,
+        rgb(255 255 255 / 0) 100%
+      );
+    }
+  }
+
+  &::after {
+    background-color: rgb(62 25 17 / 0.075);
+
+    @media screen and (min-width: 872px) {
+      background: linear-gradient(
+        90deg,
+        rgb(62 25 17 / 0) 0%,
+        rgb(62 25 17 / 0.075) 10%,
+        rgb(62 25 17 / 0.075) 90%,
+        rgb(62 25 17 / 0) 100%
+      );
+    }
+  }
+}
+
+.l-intro__main {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  @media screen and (min-width: 872px) {
+    flex-direction: row;
+    gap: 75px;
+  }
+
+  @media screen and (min-width: 1080px) {
+    gap: 100px;
+  }
+
+  @media screen and (min-width: 1420px) {
     gap: 125px;
   }
 }
@@ -47,59 +126,6 @@ body {
     align-self: auto;
     min-width: 275px;
     max-width: 325px;
-  }
-}
-
-.l-intro__divider {
-  display: flex;
-  flex-direction: column;
-  margin-inline: -35px;
-
-  @media screen and (min-width: 872px) {
-    flex-direction: row;
-    flex: 0 0 auto;
-
-    margin-inline: 0;
-  }
-
-  &::before,
-  &::after {
-    height: 2px;
-    width: 100%;
-    content: "";
-
-    @media screen and (min-width: 872px) {
-      width: 2px;
-      height: 100%;
-    }
-  }
-
-  &::before {
-    background-color: rgb(255 255 255 / 0.65);
-
-    @media screen and (min-width: 872px) {
-      background: linear-gradient(
-        0deg,
-        rgb(255 255 255 / 0) 0%,
-        rgb(255 255 255 / 0.65) 10%,
-        rgb(255 255 255 / 0.65) 90%,
-        rgb(255 255 255 / 0) 100%
-      );
-    }
-  }
-
-  &::after {
-    background-color: rgb(62 25 17 / 0.075);
-
-    @media screen and (min-width: 872px) {
-      background: linear-gradient(
-        0deg,
-        rgb(62 25 17 / 0) 0%,
-        rgb(62 25 17 / 0.075) 10%,
-        rgb(62 25 17 / 0.075) 90%,
-        rgb(62 25 17 / 0) 100%
-      );
-    }
   }
 }
 
