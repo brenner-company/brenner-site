@@ -1,0 +1,16 @@
+/**
+ * LOGO
+ */
+
+.c-logo {
+  /* display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: end; */
+
+  color: var(--color-dark);
+  text-decoration: none;
+
+  /* > img {
+    flex: 0 0 auto;
+  } */
+}

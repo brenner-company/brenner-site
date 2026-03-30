@@ -28,10 +28,14 @@ body {
   font-family: var(--text-fonts-base);
   font-size: var(--text-sizes-body);
   line-height: var(--text-line-heights-normal);
+}
 
-  /* background: var(--color-light);
-  color: var(--color-dark);
-  font-size: var(--size-step-0);
-  font-family: var(--font-base);
-  line-height: var(--leading-standard); */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--text-fonts-accent);
+  font-weight: var(--text-weights-semibold);
 }

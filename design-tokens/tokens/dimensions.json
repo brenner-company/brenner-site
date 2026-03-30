@@ -44,6 +44,12 @@
     "s-m": {
       "$value": { "min": 18, "max": 36 }
     },
+    "s-l": {
+      "$value": { "min": 18, "max": 48 }
+    },
+    "s-xl": {
+      "$value": { "min": 18, "max": 72 }
+    },
     "m-l": {
       "$value": { "min": 27, "max": 48 }
     },
@@ -58,12 +64,6 @@
     },
     "3xl-4xl": {
       "$value": { "min": 108, "max": 192 }
-    },
-    "s-l": {
-      "$value": { "min": 18, "max": 48 }
-    },
-    "s-xl": {
-      "$value": { "min": 18, "max": 72 }
     }
   }
 }

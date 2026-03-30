@@ -1,0 +1,7 @@
+/**
+ * REGION
+ */
+
+.o-region {
+  padding-block: var(--region-space, var(--dimensions-xl-2xl));
+}

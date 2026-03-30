@@ -21,13 +21,16 @@
     "weights": {
       "$type": "fontWeight",
       "light": {
-        "$value": "light"
+        "$value": "300"
       },
       "regular": {
-        "$value": "regular"
+        "$value": "400"
+      },
+      "semibold": {
+        "$value": "600"
       },
       "bold": {
-        "$value": "bold"
+        "$value": "700"
       }
     },
     "lineHeights": {
@@ -37,25 +40,6 @@
       },
       "large": {
         "$value": 1.8
-      }
-    },
-    "typography": {
-      "$type": "typography",
-      "heading": {
-        "$value": {
-          "fontFamily": "{text.fonts.accent}",
-          "fontWeight": "{text.weights.bold}",
-          "fontSize": "{text.sizes.heading}",
-          "lineHeight": "{text.lineHeights.large}"
-        }
-      },
-      "body": {
-        "$value": {
-          "fontFamily": "{text.fonts.base}",
-          "fontWeight": "{text.weights.regular}",
-          "fontSize": "{text.sizes.body}",
-          "lineHeight": "{text.lineHeights.normal}"
-        }
       }
     }
   }

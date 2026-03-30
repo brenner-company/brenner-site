@@ -13,3 +13,7 @@
     --viewport-height: 100dvh;
   }
 }
+
+:root {
+  --gutter: var(--dimensions-s-l);
+}
