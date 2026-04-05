@@ -1,4 +1,4 @@
 node_modules
-css/variables/_generated-variables.css
+css/*/_generated-*.css
 dist
 .vscode

@@ -1,5 +1,6 @@
 @import "variables/_generated-variables.css";
 @import "variables/_additional-variables.css";
+
 @import "_reset.css";
 @import "_global.css";
 @import "_fonts.css";
@@ -14,6 +15,7 @@
 @import "utilities/_headings.css";
 @import "utilities/_repel.css";
 @import "utilities/_hide.css";
-@import "utilities/_spacings.css";
+@import "utilities/_generated-spacings.css";
+@import "utilities/_text.css";
 
 @import "_layout.css";

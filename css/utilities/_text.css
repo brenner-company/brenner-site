@@ -1,0 +1,19 @@
+/**
+ * TEXT
+ */
+
+.u-text-black {
+  color: var(--color-black) !important;
+}
+
+.u-text-white {
+  color: var(--color-white) !important;
+}
+
+.u-text-no-decoration {
+  text-decoration: none !important;
+}
+
+.u-text-lowercase {
+  text-transform: lowercase !important;
+}
