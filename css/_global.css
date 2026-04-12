@@ -3,9 +3,20 @@
  */
 
 body {
+  --body-backdrop-size: clamp(500px, 100vw, 1250px);
+  --body-backdrop-position-inline: calc(
+    (100vw - clamp(24rem, 100vw, 66rem)) / 2 + var(--gutter)
+  );
+
   min-height: var(--viewport-height);
 
   background-color: var(--colors-white);
+  background-image: radial-gradient(
+    circle var(--body-backdrop-size) at var(--body-backdrop-position-inline) 0,
+    color-mix(in srgb, var(--gradient-backdrop-start) 45%, transparent),
+    color-mix(in srgb, var(--gradient-backdrop-end) 0%, transparent)
+  );
+  background-repeat: no-repeat;
 
   color: var(--color-dark);
   font-family: var(--text-fonts-base);

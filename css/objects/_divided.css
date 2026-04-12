@@ -1,0 +1,16 @@
+/**
+ * DIVIDED
+ */
+
+.o-divided > * + * {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.07) 0px,
+    rgba(0, 0, 0, 0.07) 1px,
+    rgba(255, 255, 255, 0.17) 1px,
+    rgba(255, 255, 255, 0.17) 2px
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: top;
+}

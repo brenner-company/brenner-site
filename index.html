@@ -9,22 +9,20 @@
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" /> -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="o-divided">
     <header>
       <div class="o-wrapper">
         <div class="u-repel u-padding-block-m-l" data-nowrap>
           <a
             href="/"
-            class="o-cluster u-text-black u-text-no-decoration"
-            style="
-              --cluster-gap: var(--dimensions-3xs);
-              --cluster-vertical-alignment: end;
-            "
+            class="o-cluster c-logo u-text-black u-text-no-decoration"
+            style="--cluster-gap: var(--dimensions-3xs)"
             data-nowrap
           >
             <img
               src="assets/images/brenner-logo-optim.svg"
               alt="Brenner logo"
+              class="u-flex-no-shrink u-flex-no-grow u-inline-size-m"
             />
             <h1 class="u-heading-h1 u-text-lowercase u-hidden-visually-until-m">
               Brenner
@@ -35,17 +33,49 @@
             </h1>
           </a>
           <nav>
-            <ul>
-              <li><a href="/">Github</a></li>
-              <li><a href="/">Bluesky</a></li>
+            <ul
+              class="o-cluster u-naked-list"
+              style="--cluster-gap: var(--dimensions-m)"
+              data-nowrap
+            >
+              <li>
+                <a
+                  href="/"
+                  class="o-cluster u-text-black u-text-no-decoration u-font-family-accent u-font-weight-medium"
+                  style="--cluster-gap: var(--dimensions-2xs)"
+                  data-nowrap
+                >
+                  <img
+                    src="assets/images/github-logo-optim.svg"
+                    alt="Github logo"
+                    class="u-inline-size-s"
+                  />
+                  <span>Github</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  class="o-cluster u-text-black u-text-no-decoration u-font-family-accent u-font-weight-medium"
+                  style="--cluster-gap: var(--dimensions-2xs)"
+                  data-nowrap
+                >
+                  <img
+                    src="assets/images/bluesky-logo-optim.svg"
+                    alt="Bluesky logo"
+                    class="u-inline-size-s"
+                  />
+                  <span>Bluesky</span>
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <main>
-      <div class="o-wrapper">
-        <section class="o-region o-flow">
+    <main class="o-divided">
+      <section class="o-region">
+        <div class="o-wrapper">
           <h2 class="o-flow u-heading-h2">
             <span class="block">
               Hi! My name is Karel<br />
@@ -64,8 +94,10 @@
             <span>or</span>
             <a href="/" class="button" data-variant="outline">Send an email</a>
           </div>
-        </section>
-        <section class="o-region">
+        </div>
+      </section>
+      <section class="o-region">
+        <div class="o-wrapper">
           <h3 class="u-heading-h3">Clients I worked with</h3>
           <ul class="switcher">
             <li>Vlaanderen</li>
@@ -75,11 +107,36 @@
             <li>Mediahuis</li>
             <li>NRC</li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer>
-      <div class="o-wrapper">Footer</div>
+      <div class="o-wrapper">
+        <div class="u-repel u-padding-block-xs-s" data-nowrap>
+          <a href="/">hello@brenner.company</a>
+          <a
+            href="/"
+            class="o-cluster c-logo c-logo--small u-text-black u-text-no-decoration"
+            style="--cluster-gap: var(--dimensions-3xs)"
+            data-nowrap
+          >
+            <img
+              src="assets/images/brenner-logo-optim.svg"
+              alt="Brenner logo"
+              class="u-inline-size-s u-flex-no-shrink u-flex-no-grow"
+            />
+            <span
+              class="u-font-family-accent u-text-lowercase u-hidden-visually-until-m"
+            >
+              Brenner
+              <span class="u-hidden-visually">
+                &dash; Freelance CSS architecture, front-end development & UX/UI
+                design
+              </span>
+            </span>
+          </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

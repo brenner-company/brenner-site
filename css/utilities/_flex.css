@@ -1,0 +1,19 @@
+/**
+ * FLEX
+ */
+
+.u-flex-grow {
+  flex-grow: 1 !important;
+}
+
+.u-flex-no-grow {
+  flex-grow: 0 !important;
+}
+
+.u-flex-shrink {
+  flex-shrink: 1 !important;
+}
+
+.u-flex-no-shrink {
+  flex-shrink: 0 !important;
+}

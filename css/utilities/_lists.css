@@ -1,0 +1,9 @@
+/**
+ * LISTS
+ */
+
+.u-naked-list {
+  list-style: none !important;
+  margin-bottom: 0;
+  padding-left: 0;
+}

@@ -2,3 +2,4 @@ node_modules
 css/*/_generated-*.css
 dist
 .vscode
+.claude/settings.local.json

@@ -42,6 +42,24 @@ StyleDictionary.registerTransform({
 });
 
 StyleDictionary.registerFormat({
+  name: "css/dimensions-utilities",
+  format: ({ dictionary }) => {
+    const lines = ["/**\n * DIMENSIONS\n * Do not edit directly, this file was auto-generated.\n */\n"];
+
+    for (const token of dictionary.allTokens) {
+      const size = token.path.slice(1).join("-");
+      lines.push(`/* ${size} */`);
+      for (const { prefix, property } of utilityConfig.dimensions) {
+        lines.push(`.u-${prefix}-${size} { ${property}: var(--${token.path.join("-")}) !important; }`);
+      }
+      lines.push("");
+    }
+
+    return lines.join("\n");
+  },
+});
+
+StyleDictionary.registerFormat({
   name: "css/spacing-utilities",
   format: ({ dictionary }) => {
     const lines = ["/**\n * SPACINGS\n * Do not edit directly, this file was auto-generated.\n */\n"];
@@ -51,6 +69,42 @@ StyleDictionary.registerFormat({
       lines.push(`/* ${size} */`);
       for (const { prefix, property } of utilityConfig.spacing) {
         lines.push(`.u-${prefix}-${size} { ${property}: var(--${token.path.join("-")}) !important; }`);
+      }
+      lines.push("");
+    }
+
+    return lines.join("\n");
+  },
+});
+
+StyleDictionary.registerFormat({
+  name: "css/font-family-utilities",
+  format: ({ dictionary }) => {
+    const lines = ["/**\n * FONT FAMILIES\n * Do not edit directly, this file was auto-generated.\n */\n"];
+
+    for (const token of dictionary.allTokens) {
+      const family = token.path.slice(2).join("-");
+      lines.push(`/* ${family} */`);
+      for (const { prefix, property } of utilityConfig.fontFamilies) {
+        lines.push(`.u-${prefix}-${family} { ${property}: var(--${token.path.join("-")}) !important; }`);
+      }
+      lines.push("");
+    }
+
+    return lines.join("\n");
+  },
+});
+
+StyleDictionary.registerFormat({
+  name: "css/font-weight-utilities",
+  format: ({ dictionary }) => {
+    const lines = ["/**\n * FONT WEIGHTS\n * Do not edit directly, this file was auto-generated.\n */\n"];
+
+    for (const token of dictionary.allTokens) {
+      const weight = token.path.slice(2).join("-");
+      lines.push(`/* ${weight} */`);
+      for (const { prefix, property } of utilityConfig.fontWeights) {
+        lines.push(`.u-${prefix}-${weight} { ${property}: var(--${token.path.join("-")}) !important; }`);
       }
       lines.push("");
     }
@@ -89,6 +143,21 @@ const sd = new StyleDictionary({
           destination: "_generated-spacings.css",
           format: "css/spacing-utilities",
           filter: (token) => token.path[0] === "dimensions",
+        },
+        {
+          destination: "_generated-dimensions.css",
+          format: "css/dimensions-utilities",
+          filter: (token) => token.path[0] === "dimensions",
+        },
+        {
+          destination: "_generated-font-families.css",
+          format: "css/font-family-utilities",
+          filter: (token) => token.path[0] === "text" && token.path[1] === "fonts",
+        },
+        {
+          destination: "_generated-font-weights.css",
+          format: "css/font-weight-utilities",
+          filter: (token) => token.path[0] === "text" && token.path[1] === "weights",
         },
       ],
     },
