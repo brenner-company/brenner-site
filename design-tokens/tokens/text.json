@@ -12,7 +12,7 @@
     "sizes": {
       "$type": "fontSize",
       "heading": {
-        "$value": "{type-scale.xl}"
+        "$value": "{type-scale.2xl}"
       },
       "body": {
         "$value": "{type-scale.m}"

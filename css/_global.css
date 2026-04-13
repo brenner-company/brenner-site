@@ -8,6 +8,9 @@ body {
     (100vw - clamp(24rem, 100vw, 66rem)) / 2 + var(--gutter)
   );
 
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
   min-height: var(--viewport-height);
 
   background-color: var(--colors-white);

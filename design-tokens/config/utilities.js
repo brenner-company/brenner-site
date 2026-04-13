@@ -25,4 +25,7 @@ export const utilityConfig = {
   fontFamilies: [
     { prefix: "font-family", property: "font-family" },
   ],
+  typeSizes: [
+    { prefix: "font-size", property: "font-size" },
+  ],
 };

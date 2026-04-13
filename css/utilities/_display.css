@@ -1,0 +1,15 @@
+/**
+ * DISPLAY
+ */
+
+.u-display-block {
+  display: block !important;
+}
+
+.u-display-inline {
+  display: block !important;
+}
+
+.u-display-inline-block {
+  display: inline-block !important;
+}

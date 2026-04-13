@@ -113,6 +113,24 @@ StyleDictionary.registerFormat({
   },
 });
 
+StyleDictionary.registerFormat({
+  name: "css/type-scale-utilities",
+  format: ({ dictionary }) => {
+    const lines = ["/**\n * TYPE SCALE\n * Do not edit directly, this file was auto-generated.\n */\n"];
+
+    for (const token of dictionary.allTokens) {
+      const size = token.path.slice(1).join("-");
+      lines.push(`/* ${size} */`);
+      for (const { prefix, property } of utilityConfig.typeSizes) {
+        lines.push(`.u-${prefix}-${size} { ${property}: var(--${token.path.join("-")}) !important; }`);
+      }
+      lines.push("");
+    }
+
+    return lines.join("\n");
+  },
+});
+
 const sd = new StyleDictionary({
   log: {
     verbosity: "verbose", // "default" | "silent" | "verbose"
@@ -158,6 +176,11 @@ const sd = new StyleDictionary({
           destination: "_generated-font-weights.css",
           format: "css/font-weight-utilities",
           filter: (token) => token.path[0] === "text" && token.path[1] === "weights",
+        },
+        {
+          destination: "_generated-type-scale.css",
+          format: "css/type-scale-utilities",
+          filter: (token) => token.path[0] === "type-scale",
         },
       ],
     },

@@ -15,8 +15,8 @@
   width: 1px !important;
 }
 
-@media (max-width: env(--breakpoint-below-m)) {
-  .u-hidden-visually-until-m {
+@media (max-width: env(--breakpoint-below-s)) {
+  .u-hidden-visually-until-s {
     border: 0 !important;
     clip: rect(0 0 0 0) !important;
     clip-path: inset(50%) !important;

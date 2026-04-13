@@ -3,13 +3,13 @@
  */
 
 .u-heading-h1 {
-  font-size: var(--type-scale-xl);
-}
-
-.u-heading-h2 {
   font-size: var(--type-scale-2xl);
 }
 
+.u-heading-h2 {
+  font-size: var(--type-scale-3xl);
+}
+
 .u-heading-h3 {
-  font-size: var(--type-scale-xl);
+  font-size: var(--type-scale-2xl);
 }
